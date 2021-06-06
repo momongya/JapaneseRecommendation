@@ -1,5 +1,7 @@
 /* ===== Webサイト全体のセットアップ ===== */
 /* メインの日本語フォントの取り込み */
+@charset "utf-8";
+
 @font-face
 {
 font-family:"ロゴたいぷゴシック-コンデンスド" ;
@@ -11,6 +13,9 @@ src: url('https://cdn.leafscape.be/LogoTypeGothicCondense/07LogoTypeGothic-Conde
 
 /* 全体にスタイルを適用 */
 * { 
+    margin: 0;
+    padding: 0;
+  
     /* ここでpaddingやmarginをwidthに含める */
 	-webkit-box-sizing: border-box; 
 	-moz-box-sizing: border-box; 
@@ -21,7 +26,6 @@ src: url('https://cdn.leafscape.be/LogoTypeGothicCondense/07LogoTypeGothic-Conde
     font-style: normal;
     text-align: center;     /* 基本的には文字は中央揃え */
     letter-spacing: 0.25em; /* 基本的には文字間隔は25%開ける */
-    background: #E5E5E5;  /* 背景色指定 */
     color: #584853;       /* 文字色指定 */
     line-height: 50px;      /* 行間指定 */
 }
@@ -34,6 +38,7 @@ html {
 body {
     height: 100%;
     margin: 0;
+    background: #E5E5E5;  /* 背景色指定 */
 }
 
 /* アクセントとなるフォントの指定 */
@@ -44,7 +49,6 @@ h1, h2 {
 header {
     width: 100%;
     height: 100%;
-    position: relative; /* 親位置 */
 
     /* 上下左右揃え */
     display: flex;
@@ -54,16 +58,63 @@ header {
 
 
 header h1 {
-    position: absolute;    /* ヘッダーの子要素(相対位置) */
     font-size: 120px;
     line-height: 37%;
-
-    /* 文字の中央揃え */
-    text-align: center;
     letter-spacing: 0.36em;
-
+    margin: 80px;
 }
 
+header p {
+    font-size: 28px;
+}
+
+.box {
+    width: 90%;
+    height: 60%;
+}
+
+/* ナビゲーションの箱 */
+nav {
+    background-color: #F8EBC4;
+    width: 100%;
+    height: 85px;
+    
+  }
+
+  /* リスト全体 */
+  nav ul {
+    text-align: center;
+    /* 左右揃え */
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* １つ１つのリスト */
+  nav li {
+    display: inline-block;
+    width: 23vw;
+    text-align: center;
+    height: 85px;
+    /* 上下左右揃え */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* リンク */
+  nav a {
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  /* リンクにふれた時 */
+  nav li:hover {
+    background: rgba( 229, 229, 229, 0.4);  /* 背景色指定 */
+  }
+
+  nav li:hover a {
+    color: #C67B79;
+  }
 
 /* フロートを解除したいものにつけるクラス */
 .clearfix::after {
@@ -75,4 +126,9 @@ header h1 {
     clear: both;    
     /* 非表示にする */
     visibility: hidden;
+}
+
+
+@media screen  and (max-width:479px){
+
 }
