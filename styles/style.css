@@ -1,0 +1,48 @@
+/* ===== Webサイト全体のセットアップ ===== */
+/* メインの日本語フォントの取り込み */
+@font-face
+{
+font-family:"ロゴたいぷゴシック-コンデンスド" ;
+src: url('https://cdn.leafscape.be/LogoTypeGothicCondense/07LogoTypeGothic-Condense_web.woff2')
+     format("woff2");
+}
+
+/* ===== Webサイト全体のスタイル ===== */
+
+/* 全体にスタイルを適用 */
+* { 
+    /* ここでpaddingやmarginをwidthに含める */
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+
+    font-family: "ロゴたいぷゴシック-コンデンスド" ;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;     /* 基本的には文字は中央揃え */
+    letter-spacing: 0.25em; /* 基本的には文字間隔は25%開ける */
+    background: #E5E5E5;  /* 背景色指定 */
+    color: #584853;       /* 文字色指定 */
+    line-height: 50px;      /* 行間指定 */
+}
+
+/* html */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* アクセントとなるフォントの指定 */
+h1, h2 {
+    font-family: ab-doramin, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+}
+
