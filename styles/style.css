@@ -44,5 +44,35 @@ h1, h2 {
 header {
     width: 100%;
     height: 100%;
+    position: relative; /* 親位置 */
+
+    /* 上下左右揃え */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
+header h1 {
+    position: absolute;    /* ヘッダーの子要素(相対位置) */
+    font-size: 120px;
+    line-height: 37%;
+
+    /* 文字の中央揃え */
+    text-align: center;
+    letter-spacing: 0.36em;
+
+}
+
+
+/* フロートを解除したいものにつけるクラス */
+.clearfix::after {
+    content: "";
+    /* ブロックレベル要素にする */
+    display: block;
+    height: 0;
+    /* フロート解除 */
+    clear: both;    
+    /* 非表示にする */
+    visibility: hidden;
+}
