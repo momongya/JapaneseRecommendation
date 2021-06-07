@@ -46,6 +46,11 @@ h1, h2 {
     font-family: ab-doramin, sans-serif;
 }
 
+/* レスポンシブ対応の見出し改行位置の調整 */
+span {
+    display: inline-block;
+}
+
 header {
     width: 100%;
     height: 100%;
@@ -69,11 +74,6 @@ header p {
     font-size: 28px;
 }
 
-/* レスポンシブ対応の見出し改行位置の調整 */
-header p span {
-    display: inline-block;
-  }
-
 .box {
     width: 90%;
     height: 60%;
@@ -90,7 +90,7 @@ nav {
   /* リスト全体 */
   nav ul {
     text-align: center;
-    /* 左右揃え */
+    /* 左右中央揃え */
     display: flex;
     justify-content: center;
   }
@@ -101,7 +101,7 @@ nav {
     width: 23vw;
     text-align: center;
     height: 85px;
-    /* 上下左右揃え */
+    /* 上下左右中央揃え */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,21 +124,63 @@ nav {
 
   /* 大正時代について紹介するセクション */
   .about {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 
-    /* 上下左右揃え */
+    /* 上下左右中央揃え */
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
+  .textbox {
+    width: 69vw;
+  }
+
   .about h2 {
     font-size: 48px;
+    height: 55px;
+    margin: 60px;
   }
 
   .about p {
     font-size: 24px;
+    text-align: left;
+  }
+  .workingwomon {
+    font-size: 32px;
+    height: 27vh;
+
+    /* 上下左右中央揃え */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .book {
+    width: 100vw;
+    height: 100vh;
+
+    /* 上下左右中央揃え */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .book h2 {
+    font-family:"ロゴたいぷゴシック-コンデンスド" ;
+    font-size: 60px;
+    height: 65px;
+  }
+
+  .howto {
+    /* 左右中央揃え */
+    display: flex;
+    align-items: center;
+  }
+
+  .howto h2 {
+      height: 30vh;
   }
 
 /* フロートを解除したいものにつけるクラス */
@@ -151,9 +193,4 @@ nav {
     clear: both;    
     /* 非表示にする */
     visibility: hidden;
-}
-
-
-@media screen  and (max-width:479px){
-
 }
