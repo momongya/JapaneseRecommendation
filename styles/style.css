@@ -127,14 +127,11 @@ nav {
     width: 100vw;
     height: 100vh;
 
-    /* 上下左右中央揃え */
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .textbox {
     width: 69vw;
+    margin: 18vh auto;
   }
 
   .about h2 {
@@ -150,37 +147,61 @@ nav {
   .workingwomon {
     font-size: 32px;
     height: 27vh;
-
-    /* 上下左右中央揃え */
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
-  .book {
+  .zukan {
     width: 100vw;
     height: 100vh;
-
-    /* 上下左右中央揃え */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 8vh auto;
   }
 
-  .book h2 {
+  .zukan h2 {
     font-family:"ロゴたいぷゴシック-コンデンスド" ;
     font-size: 60px;
     height: 65px;
   }
 
-  .howto {
-    /* 左右中央揃え */
-    display: flex;
-    align-items: center;
+  .howto h2 {
+    height: 30vh;
+    margin: 8vh auto;
   }
 
-  .howto h2 {
-      height: 30vh;
+  .box {
+    width: 69vw;
+    margin: 10vh auto;
+  }
+
+  .japanese_images {
+    width: 38vw;
+    height: auto;
+    margin: 2.5em;
+  }
+
+  .japanese_chara {
+    width: 30vw;
+    height: 38vw;
+  }
+
+  .japanese_chara h4 {
+    font-family: ab-doramin, sans-serif;
+    font-size: 43px;
+    letter-spacing: 0;
+    line-height: auto;
+  }
+
+  .dot {
+    font-family: "ロゴたいぷゴシック-コンデンスド" ;
+  }
+
+  .japanese_chara h3 {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .japanese_chara p {
+      font-size: 24px;
+      line-height: 36px;
+      text-align: left;
   }
 
 /* フロートを解除したいものにつけるクラス */
