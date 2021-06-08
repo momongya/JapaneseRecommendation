@@ -52,26 +52,37 @@ span {
 }
 
 header {
-    width: 100%;
-    height: 100%;
-
-    /* 上下左右揃え */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/fvright.png"), url("../images/fvleft.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 0% right 0%, bottom 0% left 0%;
+    background-size: contain, contain;
 }
 
+.titlebox {
+  width: 69vw;
+  margin: 0 auto;
+}
 
 header h1 {
     font-size: 120px;
     height: 135px;
     line-height: 37%;
     letter-spacing: 0.36em;
-    margin: 50px;
+    margin: 10px;
+    padding: 10px 0px 0px 6vw;
 }
 
 header p {
     font-size: 28px;
+}
+
+header img {
+  width: 75vw;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 18vh;
 }
 
 .box {
@@ -101,6 +112,7 @@ nav {
     width: 23vw;
     text-align: center;
     height: 85px;
+
     /* 上下左右中央揃え */
     display: flex;
     justify-content: center;
@@ -116,6 +128,11 @@ nav {
   /* リンクにふれた時 */
   nav li:hover {
     background: rgba( 229, 229, 229, 0.4);  /* 背景色指定 */
+
+    background-image: url("../images/noshi.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 
   nav li:hover a {
@@ -126,7 +143,6 @@ nav {
   .about {
     width: 100vw;
     height: 100vh;
-
   }
 
   .textbox {
@@ -144,6 +160,12 @@ nav {
     font-size: 24px;
     text-align: left;
   }
+
+  .about img {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
   .workingwomon {
     font-size: 32px;
     height: 27vh;
