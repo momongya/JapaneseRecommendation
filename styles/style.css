@@ -172,7 +172,7 @@ nav {
   }
 
   .zukan {
-    width: 100vw;
+    width: 75vw;
     height: 100vh;
     margin: 8vh auto;
   }
@@ -181,6 +181,45 @@ nav {
     font-family:"ロゴたいぷゴシック-コンデンスド" ;
     font-size: 60px;
     height: 65px;
+    margin: 3vw;
+    text-align: center;
+    background-image: url("../images/vector.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .shiori {
+    margin: 0 auto;
+  }
+
+  .shioriblue {
+    position: absolute;
+    height: 83vh;
+    width: 22vw;
+    margin: 3vh;
+    background-image: url("../images/blueshiori.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .shiorikon {
+    position: absolute;
+    height: 83vh;
+    width: 22vw;
+    margin: 3vh;
+    background-image: url("../images/konshiori.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .cloth  {
+    position: relative;
+    top: 29vh;
+    height: 45vh;
+    width: 20vw;
   }
 
   .howto h2 {
