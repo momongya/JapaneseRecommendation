@@ -46,10 +46,10 @@ h1, h2 {
     font-family: ab-doramin, sans-serif;
 }
 
-/* レスポンシブ対応の見出し改行位置の調整 */
+/* レスポンシブ対応の見出し改行位置の調整
 span {
     display: inline-block;
-}
+} */
 
 header {
     width: 100vw;
@@ -61,16 +61,16 @@ header {
 }
 
 .titlebox {
-  width: 69vw;
+  width: 72vw;
   margin: 0 auto;
 }
 
 header h1 {
-    font-size: 120px;
+    font-size: 110px;
     height: 135px;
     line-height: 37%;
     letter-spacing: 0.36em;
-    margin: 10px;
+    margin: 10px auto;
     padding: 10px 0px 0px 6vw;
 }
 
@@ -80,20 +80,22 @@ header p {
 
 header img {
   width: 75vw;
+  min-width: 830px;
+  max-width: 1150px;
   height: auto;
   margin: 0 auto;
   margin-top: 18vh;
 }
 
 .box {
-    width: 90%;
-    height: 60%;
+    width: 90vw;
+    height: 60vh;
 }
 
 /* ナビゲーションの箱 */
 nav {
     background-color: #F8EBC4;
-    width: 100%;
+    width: 100vw;
     height: 85px;
     
   }
@@ -109,7 +111,7 @@ nav {
   /* １つ１つのリスト */
   nav li {
     display: inline-block;
-    width: 23vw;
+    width: 24vw;
     text-align: center;
     height: 85px;
 
@@ -146,7 +148,7 @@ nav {
   }
 
   .textbox {
-    width: 69vw;
+    width: 72vw;
     margin: 18vh auto;
   }
 
@@ -172,7 +174,7 @@ nav {
   }
 
   .zukan {
-    width: 75vw;
+    width: 78vw;
     height: 100vh;
     margin: 8vh auto;
   }
@@ -197,7 +199,7 @@ nav {
     position: absolute;
     height: 83vh;
     width: 22vw;
-    margin: 3vh;
+    margin: 2vw;
     background-image: url("../images/blueshiori.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -208,7 +210,7 @@ nav {
     position: absolute;
     height: 83vh;
     width: 22vw;
-    margin: 3vh;
+    margin: 3vw;
     background-image: url("../images/konshiori.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -223,24 +225,75 @@ nav {
   }
 
   .howto h2 {
-    height: 30vh;
+    font-size: 48px;
+    height: 250px;
+    padding: 100px 50px;
     margin: 8vh auto;
+    background-image: url("../images/scroll.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 
   .box {
     width: 69vw;
-    margin: 10vh auto;
+    display: flex;
+    margin: auto;
   }
 
-  .japanese_images {
-    width: 38vw;
+  .japanese_images1 {
+    width: 36vw;
     height: auto;
-    margin: 2.5em;
+    margin: 2vw;
   }
+
+  .japanese_images1 img {
+    width: 32vw;
+    height: 32vw;
+    padding: 1vw 1vw 3vw 3vw;
+    background-image: url("../images/pink.png"), url("../images/yellow.png");
+    background-size: 93.75%, 93.75%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, left bottom;
+  }  
+
+  .japanese_images2 {
+    width: 36vw;
+    height: auto;
+    margin: 2vw;
+  }
+
+  .japanese_images2 img {
+    width: 32vw;
+    height: 32vw;
+    padding: 1vw 3vw 3vw 1vw;
+    background-image: url("../images/blue.png"), url("../images/yellow.png");
+    background-size: 93.75%, 93.75%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+  }  
+
+  .japanese_images3 {
+    width: 36vw;
+    height: auto;
+    margin: 2vw;
+  }
+
+  .japanese_images3 img {
+    width: 32vw;
+    height: 32vw;
+    padding: 1vw 1vw 3vw 3vw;
+    background-image: url("../images/red.png"), url("../images/yellow.png");
+    background-size: 93.75%, 93.75%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, left bottom;
+  }  
 
   .japanese_chara {
-    width: 30vw;
-    height: 38vw;
+    width: 34vw;
+    height: 36vw;
+    margin: 2vw;
+    padding: auto;
   }
 
   .japanese_chara h4 {
@@ -248,6 +301,7 @@ nav {
     font-size: 43px;
     letter-spacing: 0;
     line-height: auto;
+    text-align: left;
   }
 
   .dot {
