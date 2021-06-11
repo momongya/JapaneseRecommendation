@@ -183,7 +183,7 @@ nav {
     font-family:"ロゴたいぷゴシック-コンデンスド" ;
     font-size: 60px;
     height: 65px;
-    margin: 3vw;
+    margin: 2vw;
     text-align: center;
     background-image: url("../images/vector.png");
     background-repeat: no-repeat;
@@ -192,43 +192,65 @@ nav {
   }
 
   .shiori {
+    height: 82vh;
     margin: 0 auto;
+    display: flex;
   }
 
-  .shioriblue {
-    position: absolute;
-    height: 83vh;
+  .salary {
+    height: 79vh;
     width: 22vw;
-    margin: 2vw;
+    margin: 0 2vw;
     background-image: url("../images/blueshiori.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 100% 100%;
   }
 
-  .shiorikon {
-    position: absolute;
-    height: 83vh;
-    width: 22vw;
-    margin: 3vw;
-    background-image: url("../images/konshiori.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-
-  .cloth  {
-    position: relative;
-    top: 29vh;
-    height: 45vh;
+  .salary img {
+    padding-top: 29vh;
+    height: 70vh;
     width: 20vw;
   }
 
+  .nurse {
+    height: 79vh;
+    width: 22vw;
+    margin: 0 2vw;
+    background-image: url("../images/konshiori.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .nurse img {
+    padding-top: 27vh;
+    height: 71vh;
+    width: 17vw;
+  }
+  
+
+  .busgirl {
+    height: 79vh;
+    width: 22vw;
+    margin: 0 2vw;
+    background-image: url("../images/blueshiori.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .busgirl img {
+    padding-top: 27vh;
+    height: 71vh;
+    width: 16vw;
+  }
+
   .howto h2 {
-    font-size: 48px;
-    height: 250px;
-    padding: 100px 50px;
-    margin: 5vh auto;
+    font-size: 40px;
+    height: 210px;
+    padding: 80px 50px;
+    margin: 7vh auto;
     background-image: url("../images/scroll.png");
     background-repeat: no-repeat;
     background-position: center;
