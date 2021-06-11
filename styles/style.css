@@ -345,6 +345,96 @@ nav {
       text-align: left;
   }
 
+  footer {
+    height: 43vh;
+    width: 100vw;
+    padding: 3vh;
+    background-image: url("../images/footer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .gototop {
+    height: 80px;
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .gototop img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .gototop p {
+    font-size: 18px;
+    color: #F7F7F5;
+  }
+  
+  .copy {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .copy p {
+    font-size: 14px;
+    color: #F7F7F5;
+  }
+
+  footer h1 {
+    font-size: 64px;
+    color: #F7F7F5;
+  }
+
+  /* フッターのリンクの箱 */
+.link {
+  width: 70vw;
+  height: 85px;
+  margin: 0 auto;
+}
+
+/* リンクのリスト全体 */
+.link ul {
+  text-align: center;
+  /* 左右中央揃え */
+  display: flex;
+  justify-content: center;
+}
+
+/* １つ１つのリスト */
+.link li {
+  width: 24vw;
+  text-align: center;
+  height: 85px;
+  margin: 0 1vw;
+  background-color: #F7F7F5;
+
+  /* 上下左右中央揃え */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* リンク */
+.link a {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* リンクにふれた時 */
+.link li:hover {
+  background: rgba( 229, 229, 229, 0.4);  /* 背景色指定 */
+
+  background-image: url("../images/noshi.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.link li:hover a {
+  color: #C67B79;
+}
 /* フロートを解除したいものにつけるクラス */
 .clearfix::after {
     content: "";
