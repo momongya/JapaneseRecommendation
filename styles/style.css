@@ -348,7 +348,7 @@ nav {
   footer {
     position: relative;
     height: 43vh;
-    min-height: 1000px;
+    min-height: 350px;
     width: 100vw;
     padding: 3vh;
     background-image: url("../images/footer.png");
@@ -371,6 +371,7 @@ nav {
   .gototop p {
     font-size: 18px;
     color: #F7F7F5;
+    line-height: 20px;
   }
   
   .copy {
@@ -391,7 +392,7 @@ nav {
     font-size: 64px;
     color: #F7F7F5;
     height: fit-content;
-    margin: 15px;
+    margin: 30px;
   }
 
   /* フッターのリンクの箱 */
