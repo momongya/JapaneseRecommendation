@@ -346,7 +346,9 @@ nav {
   }
 
   footer {
+    position: relative;
     height: 43vh;
+    min-height: 1000px;
     width: 100vw;
     padding: 3vh;
     background-image: url("../images/footer.png");
@@ -356,15 +358,14 @@ nav {
   }
 
   .gototop {
-    height: 80px;
-    width: 150px;
+    width: 200px;
+    height: auto;
     margin: 0 auto;
   }
 
   .gototop img {
-    width: 40px;
+    width: 80px;
     height: auto;
-    margin-bottom: 10px;
   }
 
   .gototop p {
@@ -374,23 +375,29 @@ nav {
   
   .copy {
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   .copy p {
     font-size: 14px;
     color: #F7F7F5;
+    margin: 0 auto;
   }
 
   footer h1 {
     font-size: 64px;
     color: #F7F7F5;
+    height: fit-content;
+    margin: 15px;
   }
 
   /* フッターのリンクの箱 */
 .link {
-  width: 70vw;
-  height: 85px;
+  width: 43vw;
+  height: 55px;
   margin: 0 auto;
 }
 
@@ -404,11 +411,12 @@ nav {
 
 /* １つ１つのリスト */
 .link li {
-  width: 24vw;
+  width: 13vw;
   text-align: center;
-  height: 85px;
+  height: 55px;
   margin: 0 1vw;
   background-color: #F7F7F5;
+  border-radius: 10px;
 
   /* 上下左右中央揃え */
   display: flex;
@@ -419,12 +427,12 @@ nav {
 /* リンク */
 .link a {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 14px;
 }
 
 /* リンクにふれた時 */
 .link li:hover {
-  background: rgba( 229, 229, 229, 0.4);  /* 背景色指定 */
+  background: #F8EBC4;  /* 背景色指定 */
 
   background-image: url("../images/noshi.png");
   background-repeat: no-repeat;
