@@ -1,3 +1,84 @@
 @media screen  and (max-width:750px){
+    img { max-width: 100%; }
 
+    header {
+        background-image: url("../images/fvrightsp.png"), url("../images/fvleftsp.png");
+    }
+
+    .titlebox {
+        width: 90vw;
+    }
+      
+    header h1 {
+        font-size: 45px;
+        height: 70px;
+        line-height: 22px;
+    }
+      
+    header p {
+        font-size: 14px;
+        width: 210px;
+        margin: auto;
+    }
+      
+    header img {
+        width: 90vw;
+        min-width: 100px;
+        margin-top: 28vh;
+    }
+      
+    /* ナビゲーションの箱 */
+    nav {
+        display: none;
+    }
+
+    /* 大正時代について紹介するセクション */
+    .whatistaisho {
+        width: 90vw;
+    }
+      
+    .about h2 {
+        font-size: 25px;
+        height: 90px;
+        margin: 60px 0;
+    }
+      
+    .about p {
+        font-size: 14px;
+        line-height: 33px;
+    }
+      
+    .workingwomon {
+        font-size: 14px;
+    }
+      
+    .textbox {
+        width: 200px;
+        height: 150px;
+        margin: 18vh auto;
+    }
+      
+    .zukan {
+        width: 90vw;
+        height: 100vh;
+        margin: 8vh auto;
+    }
+      
+    .zukan h2 {
+        font-size: 25px;
+        height: 25px;
+        background-size: cover;
+    }
+      
+    .howto h2 {
+        width: 90vw;
+        height: 80px;
+        font-size: 18px;
+        margin: 3vh auto;
+        padding: 10px 60px;
+        line-height: 27px;
+    }
+      
+        
+      
 }

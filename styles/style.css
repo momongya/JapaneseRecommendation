@@ -46,10 +46,10 @@ h1, h2 {
     font-family: ab-doramin, sans-serif;
 }
 
-/* レスポンシブ対応の見出し改行位置の調整
+/* レスポンシブ対応の見出し改行位置の調整 */
 span {
     display: inline-block;
-} */
+}
 
 header {
     width: 100vw;
@@ -87,10 +87,7 @@ header img {
   margin-top: 18vh;
 }
 
-.box {
-    width: 90vw;
-    height: 60vh;
-}
+
 
 /* ナビゲーションの箱 */
 nav {
@@ -150,7 +147,7 @@ nav {
 
   .whatistaisho {
     position: absolute;
-    top: 10%;
+    top: 10vh;
     right: 0;
     left: 0;
     margin: auto;
@@ -160,7 +157,7 @@ nav {
   .about h2 {
     font-size: 48px;
     height: 55px;
-    margin: 60px 0;
+    margin: 40px 0;
   }
 
   .about p {
@@ -174,6 +171,7 @@ nav {
     right: 0;
     left: 0;
     width: 100vw;
+    min-width: 800px;
     margin: auto;
   }
 
@@ -211,7 +209,7 @@ nav {
     display: flex;
   }
 
-  .salary {
+  .salaryimg {
     height: 79vh;
     width: 22vw;
     margin: 0 2vw;
@@ -219,15 +217,72 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
+    display: block;
+    z-index: 100;
+    position: relative;
   }
 
-  .salary img {
-    padding-top: 29vh;
+  .salaryimg img {
     height: 70vh;
-    width: 20vw;
+    padding: 0 1vw;
+    padding-top: 29vh;
   }
 
-  .nurse {
+  .salarychara {
+    height: 79vh;
+    width: 22vw;
+    margin: 0 2vw;
+    padding: 26vh 2vw;
+    background-image: url("../images/blueshiori.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    transform: rotateY(180deg);/*要素を回転させる*/
+    transition:5s;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .salarychara h4 {
+    font-family: ab-doramin, sans-serif;
+    font-size: 30px;
+    letter-spacing: 0em;
+    line-height: auto;
+    text-align: left;
+    text-decoration:underline;
+    border-width:0.3px;
+  }
+
+  .salarychara h3 {
+    font-size: 40px;
+    letter-spacing: 0.6em;
+    width: 18vw;
+    height: 53px;
+    border-bottom: solid 14px rgba(68, 102, 121, 0.25);
+    margin: 3vh auto;
+    
+  }
+
+  .salarychara p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 36px;
+    letter-spacing: 0.13em;
+  }
+
+  .salaryimg:hover {
+    transform: rotateY(180deg);/*要素を裏返す*/
+    z-index: 0;/*背面にするため*/
+  }
+
+  .salarychara:hover {
+    transform: rotateY(0deg);/*裏返した要素を元に戻す*/
+    z-index: 100;/*前面に出すため*/
+  }
+
+  .nurseimg {
     height: 79vh;
     width: 22vw;
     margin: 0 2vw;
@@ -237,14 +292,14 @@ nav {
     background-size: 100% 100%;
   }
 
-  .nurse img {
+  .nurseimg img {
     padding-top: 27vh;
     height: 71vh;
     width: 17vw;
   }
   
 
-  .busgirl {
+  .busgirlimg {
     height: 79vh;
     width: 22vw;
     margin: 0 2vw;
@@ -254,7 +309,7 @@ nav {
     background-size: 100% 100%;
   }
 
-  .busgirl img {
+  .busgirlimg img {
     padding-top: 27vh;
     height: 71vh;
     width: 16vw;
@@ -272,10 +327,7 @@ nav {
   }
 
   .box {
-    /* width: 72vw;
-    min-width: 1050px; */
-    /* height: 40vw;
-    min-height: 522px; */
+    min-height: 522px;
     height: fit-content;
     margin: 3vh auto;
     display: flex;
@@ -331,7 +383,7 @@ nav {
   }  
 
   .japanese_chara {
-    width: 30vw;
+    width: 34vw;
     min-width: 406px;
     height: 40vw;
     min-height: 570px;
@@ -350,6 +402,8 @@ nav {
 
   .dot {
     font-family: "ロゴたいぷゴシック-コンデンスド" ;
+    text-decoration:underline;
+    border-width:0.3px;
   }
 
   .japanese_chara h3 {
@@ -465,14 +519,16 @@ nav {
 .link li:hover a {
   color: #C67B79;
 }
-/* フロートを解除したいものにつけるクラス */
-.clearfix::after {
-    content: "";
-    /* ブロックレベル要素にする */
-    display: block;
-    height: 0;
-    /* フロート解除 */
-    clear: both;    
-    /* 非表示にする */
-    visibility: hidden;
+
+/* スクロールアニメーション用 */
+.scroll-fade{opacity: 0; transition: all 2s/*処理にかかる時間*/;}
+.scroll-up{opacity: 0; transform: translateY(100px)/*スクロールアップする距離*/; transition: all 2s/*処理にかかる時間*/;}
+.scroll-up.done, .scroll-fade.done{opacity : 1; transform : translate(0, 0);}
+.load-fade {opacity : 0; transition : all 2s/*処理にかかる時間*/;}
+.load-up{opacity: 0; transform: translateY(100px)/*スクロールアップする距離*/; transition: all 2s/*処理にかかる時間*/;}
+.load-up.done, .load-fade.done{opacity : 1; transform : translate(0, 0);}
+
+/* スマホ版でのみ表示させたいもの用 */
+@media screen  and (min-width:750px){
+  .br-sp {display: none; }
 }
