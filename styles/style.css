@@ -143,19 +143,24 @@ nav {
 
   /* 大正時代について紹介するセクション */
   .about {
+    position: relative;
     width: 100vw;
     height: 100vh;
   }
 
-  .textbox {
+  .whatistaisho {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    left: 0;
+    margin: auto;
     width: 72vw;
-    margin: 18vh auto;
   }
 
   .about h2 {
     font-size: 48px;
     height: 55px;
-    margin: 60px;
+    margin: 60px 0;
   }
 
   .about p {
@@ -164,13 +169,22 @@ nav {
   }
 
   .about img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
     width: 100vw;
-    margin: 0 auto;
+    margin: auto;
   }
 
   .workingwomon {
     font-size: 32px;
     height: 27vh;
+  }
+
+  .textbox {
+    width: 72vw;
+    margin: 18vh auto;
   }
 
   .zukan {
@@ -258,8 +272,11 @@ nav {
   }
 
   .box {
-    width: 72vw;
-    height: 40vw;
+    /* width: 72vw;
+    min-width: 1050px; */
+    /* height: 40vw;
+    min-height: 522px; */
+    height: fit-content;
     margin: 3vh auto;
     display: flex;
     justify-content: center;
@@ -315,8 +332,10 @@ nav {
 
   .japanese_chara {
     width: 30vw;
+    min-width: 406px;
     height: 40vw;
-    padding: 0 1vw;
+    min-height: 570px;
+    padding: 0 40px;
   }
 
   .japanese_chara h4 {
@@ -347,8 +366,9 @@ nav {
 
   footer {
     position: relative;
-    height: 43vh;
-    min-height: 350px;
+    height: 35vh;
+    min-height: 400px;
+    max-height: 500px;
     width: 100vw;
     padding: 3vh;
     background-image: url("../images/footer.png");
@@ -413,6 +433,7 @@ nav {
 /* １つ１つのリスト */
 .link li {
   width: 13vw;
+  min-width: 123px;
   text-align: center;
   height: 55px;
   margin: 0 1vw;
