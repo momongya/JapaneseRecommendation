@@ -78,7 +78,112 @@
         padding: 10px 60px;
         line-height: 27px;
     }
+    
+      .box {
+        min-height: 250px;
+        flex-flow: column;
+        flex-direction: column;
+        width: 90vw;
+        background-image: url("../images/yellow.png");
+        background-size: cover;
+      }
+    
+      .japanese_images1 {
+        position: relative;
+        width: 80vw;
+        height: auto;
+        margin: 5vw auto;
+        margin-bottom: 0;
+      }
+    
+      .japanese_images1 img {
+        width: 80vw;
+        height: 80vw;
+        padding-top: 3vw;
+        background-image: url("../images/pink.png");
+        background-size: 100%;
+        background-position: center;
+      }  
+    
+      .japanese_images2 {
+        width: 80vw;
+        height: auto;
+        margin: 5vw auto;
+        order: 0;
+      }
+    
+      .japanese_images2 img {
+        width: 80vw;
+        height: 80vw;
+        padding-top: 3vw;
+        background-image: url("../images/blue.png");
+        background-size: 100%;
+        background-position: center;
+      }  
+
+      .japanese_images3 {
+        width: 80vw;
+        height: auto;
+        margin: 5vw auto;
+      }
+    
+      .japanese_images3 img {
+        width: 80vw;
+        height: 80vw;
+        padding-top: 3vw;
+        background-image: url("../images/red.png");
+        background-size: 100%;
+        background-position: center;
+      }  
+    
+      .japanese_chara {
+        width: 80vw;
+        height: fit-content;
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: 5vw;
+        min-width: 0;
+        min-height: 0;
+        order: 1;
+      }
+    
+      .japanese_chara h4 {
+        font-size: 21.5px;
+        color: #FBF7E9;
+      }
+    
+      .dot {
+        color: #FBF7E9;
+      }
+    
+      .japanese_chara h3 {
+        font-size: 18px;
+        text-align: center;
+        padding: 10px 0px;
+        line-height: 35px;
+      }
+    
+      .japanese_chara p {
+          font-size: 14px;
+          line-height: 32.5px;
+          padding: 10px 0px;
+      }
+
+    footer {
+        min-height: 280px;
+        max-height: 300px;
+        background-image: url("../images/Union.png");
+    }
+
+    .gototop p {
+        font-size: 15px;
+    }
       
-        
-      
+    footer h1 {
+        font-size: 36px;
+    }
+
+    .link {
+        display: none;
+    }
 }
