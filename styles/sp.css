@@ -10,15 +10,22 @@
     }
       
     header h1 {
-        font-size: 45px;
+        font-size: 40px;
         height: 70px;
         line-height: 22px;
+        padding: 10px 5px;
+        margin: auto;
     }
       
     header p {
         font-size: 14px;
         width: 210px;
         margin: auto;
+        line-height: 3px;
+    }
+
+    header span {
+        line-height: 25px;
     }
       
     header img {
@@ -34,13 +41,16 @@
 
     /* 大正時代について紹介するセクション */
     .whatistaisho {
-        width: 90vw;
-    }
-      
+        position: absolute;
+        top: 0;
+        width: 85vw;
+        margin: 0 auto;
+      }
+
     .about h2 {
         font-size: 25px;
         height: 90px;
-        margin: 60px 0;
+        margin: 30px 0;
     }
       
     .about p {
@@ -50,6 +60,15 @@
       
     .workingwomon {
         font-size: 14px;
+        height: 20vh;
+    }
+
+    .workingwomon p {
+        line-height: 3px;
+    }
+
+    .workingwomon span {
+        line-height: 21px;
     }
       
     .textbox {
@@ -60,7 +79,7 @@
       
     .zukan {
         width: 90vw;
-        height: 100vh;
+        height: auto;
         margin: 8vh auto;
     }
       
@@ -69,6 +88,226 @@
         height: 25px;
         background-size: cover;
     }
+
+    .shioripc {
+        display: none;
+    }
+
+    .shiorisp {
+        width: 100vw;
+        height: fit-content;
+        margin: 0 auto;
+    }
+
+    .salarysp {
+        width: 100vh;
+        height: 80vh;
+        display: flex;
+        padding: 0 5vw;
+        position: relative;
+    }
+    
+    .salaryspimg {
+        height: 130vw;
+        width: 50vw;
+        margin: 0 2vw;
+        background-image: url("../images/blueshiori.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        transform: rotate(-7deg);
+    }
+    
+    .salaryspimg img {
+        height: 130vw;
+        padding: 45vw 2vw 15vw;
+    }
+    
+    .salaryspchara {
+        height: 130vw;
+        width: 50vw;
+        margin: 0 2vw;
+        padding: 40vw 4vw 15vw;
+        background-image: url("../images/blueshiori.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        transform: rotate(7deg);
+        position: absolute;
+        top: 0;
+        left: 40vw;
+    }
+    
+    .salaryspchara h4 {
+        font-family: ab-doramin, sans-serif;
+        font-size: 14px;
+        letter-spacing: 0em;
+        line-height: auto;
+        text-align: left;
+        text-decoration:underline;
+        border-width:0.3px;
+        line-height: 1px;
+    }
+    
+    .salaryspchara h3 {
+        font-size: 20px;
+        letter-spacing: 0.6em;
+        padding-bottom: 2px;
+        border-bottom: solid 10px rgba(68, 102, 121, 0.25);
+        margin: 0 auto 1vw;
+        line-height: 5px;
+    }
+    
+    .salaryspchara p {
+        font-size: 13px;
+        text-align: left;
+        line-height: 21px;
+        letter-spacing: 0.2em;
+        background-color: #F7F8F5;
+        margin-top: 2vh;
+    }
+    
+    .nursesp{
+        width: 100vh;
+        height: 80vh;
+        display: flex;
+        padding: 0 5vw;
+        position: relative;
+    }
+    
+      .nursespimg {
+        height: 130vw;
+        width: 50vw;
+        margin: 0 2vw;
+        background-image: url("../images/konshiori.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        transform: rotate(7deg);
+        position: absolute;
+        top: 0;
+        left: 40vw;
+      }
+    
+      .nursespimg img {
+        height: 130vw;
+        padding: 45vw 2vw 15vw;
+      }
+
+      .nursespchara {
+        height: 130vw;
+        width: 50vw;
+        margin: 0 2vw;
+        padding: 40vw 4vw 15vw;
+        background-image: url("../images/konshiori.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        transform: rotate(-7deg);
+    }
+    
+    .nursespchara h4 {
+        font-family: ab-doramin, sans-serif;
+        font-size: 14px;
+        letter-spacing: 0em;
+        line-height: auto;
+        text-align: left;
+        text-decoration:underline;
+        border-width:0.3px;
+        line-height: 1px;
+    }
+    
+    .nursespchara h3 {
+        font-size: 20px;
+        letter-spacing: 0.6em;
+        padding-bottom: 2px;
+        border-bottom: solid 10px rgba(88, 72, 83, 0.25);;
+        margin: 0 auto 1vw;
+        line-height: 5px;
+    }
+    
+    .nursespchara p {
+        font-size: 13px;
+        text-align: left;
+        line-height: 21px;
+        letter-spacing: 0.2em;
+        background-color: #F9EBC4;
+        margin-top: 2vh;
+    }
+
+    .busgirlsp{
+        width: 100vh;
+        height: 80vh;
+        display: flex;
+        padding: 0 5vw;
+        position: relative;
+    }
+    
+      .busgirlspimg {
+        height: 130vw;
+        width: 50vw;
+        margin: 0 2vw;
+        background-image: url("../images/blueshiori.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        transform: rotate(-7deg);
+      }
+    
+      .busgirlspimg img {
+        height: 130vw;
+        padding: 45vw 2vw 15vw;
+      }
+
+      .busgirlspchara {
+        height: 130vw;
+        width: 50vw;
+        margin: 0 2vw;
+        padding: 40vw 4vw 15vw;
+        background-image: url("../images/blueshiori.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        transform: rotate(7deg);
+        position: absolute;
+        top: 0;
+        left: 40vw;
+    }
+    
+    .busgirlspchara h4 {
+        font-family: ab-doramin, sans-serif;
+        font-size: 14px;
+        letter-spacing: 0em;
+        line-height: auto;
+        text-align: left;
+        text-decoration:underline;
+        border-width:0.3px;
+        line-height: 1px;
+    }
+    
+    .busgirlspchara h3 {
+        font-size: 20px;
+        padding-bottom: 2px;
+        border-bottom: solid 10px rgba(68, 102, 121, 0.25);
+        margin: 0 auto 1vw;
+        line-height: 5px;
+        letter-spacing: 0.2em;
+    }
+    
+    .busgirlspchara p {
+        font-size: 13px;
+        text-align: left;
+        line-height: 21px;
+        letter-spacing: 0.2em;
+        background-color: #F7F8F5;
+        margin-top: 2vh;
+    }
+
+      .dotkon {
+        font-family: "ロゴたいぷゴシック-コンデンスド" ;
+        text-decoration:underline;
+        border-width:0.3px;
+      }
       
     .howto h2 {
         width: 90vw;
@@ -104,8 +343,23 @@
         background-size: 100%;
         background-position: center;
       }  
+
+      .japanese_images1 h4 {
+        position: absolute;
+        top: 7px;
+        left: 15px;
+        font-size: 21.5px;
+        color: #FBF7E9;
+        font-family: ab-doramin, sans-serif;
+        letter-spacing: 0em;
+        line-height: auto;
+        text-align: left;
+        text-decoration:underline;
+        border-width:0.3px;
+      }
     
       .japanese_images2 {
+        position: relative;
         width: 80vw;
         height: auto;
         margin: 5vw auto;
@@ -121,7 +375,22 @@
         background-position: center;
       }  
 
+      .japanese_images2 h4 {
+        position: absolute;
+        top: 7px;
+        left: 15px;
+        font-size: 21.5px;
+        color: #FBF7E9;
+        font-family: ab-doramin, sans-serif;
+        letter-spacing: 0em;
+        line-height: auto;
+        text-align: left;
+        text-decoration:underline;
+        border-width:0.3px;
+      }
+
       .japanese_images3 {
+        position: relative;
         width: 80vw;
         height: auto;
         margin: 5vw auto;
@@ -135,6 +404,24 @@
         background-size: 100%;
         background-position: center;
       }  
+
+      .japanese_images3 h4 {
+        position: absolute;
+        top: 7px;
+        left: 15px;
+        font-size: 21.5px;
+        color: #FBF7E9;
+        font-family: ab-doramin, sans-serif;
+        letter-spacing: 0em;
+        line-height: auto;
+        text-align: left;
+        text-decoration:underline;
+        border-width:0.3px;
+      }
+    
+      .dot {
+        color: #FBF7E9;
+      }
     
       .japanese_chara {
         width: 80vw;
@@ -148,18 +435,13 @@
       }
     
       .japanese_chara h4 {
-        font-size: 21.5px;
-        color: #FBF7E9;
-      }
-    
-      .dot {
-        color: #FBF7E9;
+        display: none;
       }
     
       .japanese_chara h3 {
         font-size: 18px;
         text-align: center;
-        padding: 10px 0px;
+        padding: 0 0 10px;
         line-height: 35px;
       }
     

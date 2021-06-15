@@ -203,7 +203,7 @@ nav {
     background-size: contain;
   }
 
-  .shiori {
+  .shioripc {
     height: 82vh;
     margin: 0 auto;
     display: flex;
@@ -337,7 +337,7 @@ nav {
   .japanese_images1 {
     width: 40vw;
     height: auto;
-    margin-right: 1vw;
+    margin-right: 2vw;
   }
 
   .japanese_images1 img {
@@ -369,7 +369,7 @@ nav {
   .japanese_images3 {
     width: 40vw;
     height: auto;
-    margin-right: 1vw;
+    margin-right: 2vw;
   }
 
   .japanese_images3 img {
@@ -383,11 +383,11 @@ nav {
   }  
 
   .japanese_chara {
-    width: 34vw;
+    width: 35vw;
     min-width: 406px;
     height: 40vw;
     min-height: 570px;
-    padding: 0 40px;
+    padding: 0;
   }
 
   .japanese_chara h4 {
@@ -521,15 +521,23 @@ nav {
   color: #C67B79;
 }
 
-/* スクロールアニメーション用 */
-.scroll-fade{opacity: 0; transition: all 2s/*処理にかかる時間*/;}
-.scroll-up{opacity: 0; transform: translateY(100px)/*スクロールアップする距離*/; transition: all 2s/*処理にかかる時間*/;}
-.scroll-up.done, .scroll-fade.done{opacity : 1; transform : translate(0, 0);}
-.load-fade {opacity : 0; transition : all 2s/*処理にかかる時間*/;}
-.load-up{opacity: 0; transform: translateY(100px)/*スクロールアップする距離*/; transition: all 2s/*処理にかかる時間*/;}
-.load-up.done, .load-fade.done{opacity : 1; transform : translate(0, 0);}
-
 /* スマホ版でのみ表示させたいもの用 */
 @media screen  and (min-width:750px){
   .br-sp {display: none; }
+
+  .japanese_images1 h4 {
+    display: none;
+  }
+
+  .japanese_images2 h4 {
+    display: none;
+  }
+
+  .japanese_images3 h4 {
+    display: none;
+  }
+
+  .shiorisp {
+    display: none;
+  }
 }

@@ -29,13 +29,13 @@ function scroll_effect(){
     var tt = $(window).scrollTop();
     var hh = $(window).height();
     $('.scroll-fade').each(function(){
-        var yy = $(this).offset().top+400;//効果発生開始タイミングを操作したい場合は数値を変更する
+        var yy = $(this).offset().top+200;//効果発生開始タイミングを操作したい場合は数値を変更する
         if (tt > yy - hh){
             $(this).addClass('done');
         }
     });
     $('.scroll-up').each(function(){
-        var yy = $(this).offset().top+400;//効果発生開始タイミングを操作したい場合は数値を変更する
+        var yy = $(this).offset().top+200;//効果発生開始タイミングを操作したい場合は数値を変更する
         if (tt > yy - hh){
             $(this).addClass('done');
         }

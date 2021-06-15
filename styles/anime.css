@@ -1,0 +1,8 @@
+/* スクロールアニメーション用 */
+.scroll-fade{opacity: 0; transition: all 1s/*処理にかかる時間*/;}
+.scroll-up{opacity: 0; transform: translateY(30px)/*スクロールアップする距離*/; transition: all 1s/*処理にかかる時間*/;}
+.scroll-up.done, .scroll-fade.done{opacity : 1; transform : translate(0, 0);}
+.load-fade {opacity : 0; transition : all 1s/*処理にかかる時間*/;}
+.load-up{opacity: 0; transform: translateY(30px)/*スクロールアップする距離*/; transition: all 1s/*処理にかかる時間*/;}
+.load-up.done, .load-fade.done{opacity : 1; transform : translate(0, 0);}
+
