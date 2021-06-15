@@ -262,7 +262,7 @@
       .busgirlspchara {
         height: 130vw;
         width: 50vw;
-        margin: 0 2vw;
+        padding: 0 2vw;
         padding: 40vw 4vw 15vw;
         background-image: url("../images/blueshiori.png");
         background-repeat: no-repeat;
@@ -286,7 +286,7 @@
     }
     
     .busgirlspchara h3 {
-        font-size: 20px;
+        font-size: 18px;
         padding-bottom: 2px;
         border-bottom: solid 10px rgba(68, 102, 121, 0.25);
         margin: 0 auto 1vw;
