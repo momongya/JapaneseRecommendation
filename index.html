@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="styles/anime.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="scripts/scrollanime.js"></script>
+    <script src="scripts/script.js"></script>
 
     <!-- アクセントフォント(ABドラミン)の取り込み -->
     <script>
@@ -27,7 +30,7 @@
 
 <body>
     
-    <header id="top">
+    <header>
         <div class="wrap load-fade">
         <img src="images/subtitle.png">
         <h1>和のススメ</h1>
@@ -58,7 +61,8 @@
         </p>
     </div>
     </div>
-    <img src="images/town.png">
+    <img src="images/town.png" class="townpc">
+    <img src="images/townsp.png" class="townsp">
 </section>
 
 <section class="uniform" id="uniform">
@@ -212,9 +216,11 @@
 </section>
 
 <footer>
-    <div class="gototop" id="top">
-        <img src="images/topbutton.png">
-        <p>ページトップへ</p>
+    <div class="gototop" id="#top">
+        <a href="#">
+            <img src="images/topbutton.png">
+            <p>ページトップへ</p>
+        </a>
     </div>
     <h1>和のススメ</h1>
     <div class="link">

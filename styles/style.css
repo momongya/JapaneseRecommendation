@@ -46,11 +46,6 @@ h1, h2 {
     font-family: ab-doramin, sans-serif;
 }
 
-/* レスポンシブ対応の見出し改行位置の調整 */
-span {
-    display: inline-block;
-}
-
 header {
     width: 100vw;
     height: 100vh;
@@ -70,7 +65,7 @@ header h1 {
     height: 135px;
     line-height: 37%;
     letter-spacing: 0.36em;
-    margin: 10px auto;
+    margin: 5vh auto 0;
     padding: 10px 0px 0px 6vw;
 }
 
@@ -80,7 +75,6 @@ header p {
 
 header img {
   width: 75vw;
-  min-width: 830px;
   max-width: 1150px;
   height: auto;
   margin: 0 auto;
@@ -156,8 +150,8 @@ nav {
 
   .about h2 {
     font-size: 48px;
-    height: 55px;
     margin: 40px 0;
+    line-height: 72px;
   }
 
   .about p {
@@ -165,19 +159,17 @@ nav {
     text-align: left;
   }
 
-  .about img {
+  .townpc {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
     width: 100vw;
-    min-width: 800px;
     margin: auto;
   }
 
   .workingwomon {
     font-size: 32px;
-    height: 27vh;
   }
 
   .textbox {
@@ -197,10 +189,6 @@ nav {
     height: 65px;
     margin: 2vw;
     text-align: center;
-    background-image: url("../images/vector.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
   }
 
   .shioripc {
@@ -210,7 +198,7 @@ nav {
   }
 
   .salaryimg {
-    height: 79vh;
+    height: 45vw;
     width: 22vw;
     margin: 0 2vw;
     background-image: url("../images/blueshiori.png");
@@ -223,16 +211,16 @@ nav {
   }
 
   .salaryimg img {
-    height: 70vh;
+    height: 40vw;
     padding: 0 1vw;
-    padding-top: 29vh;
+    padding-top: 15vw;
   }
 
   .salarychara {
-    height: 79vh;
+    height: 45vw;
     width: 22vw;
     margin: 0 2vw;
-    padding: 26vh 2vw;
+    padding: 15vw 2vw;
     background-image: url("../images/blueshiori.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -283,7 +271,7 @@ nav {
   }
 
   .nurseimg {
-    height: 79vh;
+    height: 45vw;
     width: 22vw;
     margin: 0 2vw;
     background-image: url("../images/konshiori.png");
@@ -293,14 +281,14 @@ nav {
   }
 
   .nurseimg img {
-    padding-top: 27vh;
-    height: 71vh;
+    padding-top: 15vw;
+    height: 40vw;
     width: 17vw;
   }
   
 
   .busgirlimg {
-    height: 79vh;
+    height: 45vw;
     width: 22vw;
     margin: 0 2vw;
     background-image: url("../images/blueshiori.png");
@@ -310,8 +298,8 @@ nav {
   }
 
   .busgirlimg img {
-    padding-top: 27vh;
-    height: 71vh;
+    padding-top: 15vw;
+    height: 40vw;
     width: 16vw;
   }
 
@@ -523,7 +511,7 @@ nav {
 
 /* スマホ版でのみ表示させたいもの用 */
 @media screen  and (min-width:750px){
-  .br-sp {display: none; }
+  .townsp { display: none; }
 
   .japanese_images1 h4 {
     display: none;
@@ -540,4 +528,42 @@ nav {
   .shiorisp {
     display: none;
   }
+}
+
+@media screen and (min-width:1050px) {
+  .br-sp { display: none; }
+}
+
+@media  screen and (max-width:1050px) {
+  html {
+    font-size: 17px;
+  }
+
+  .titlebox {
+        width: 90vw;
+    }
+
+    header {
+      padding-top: 10vh;
+    }
+      
+    header h1 {
+        font-size: 4rem;
+        height: 70px;
+        line-height: 22px;
+        padding: 10px 5px;
+        margin: auto;
+    }
+      
+    header p {
+        font-size: 1.4rem;
+        width: 80vw;
+        margin: auto;
+        line-height: 3px;
+    }
+
+    header span {
+        line-height: 25px;
+    }
+  
 }

@@ -1,31 +1,10 @@
 @media screen  and (max-width:750px){
+    html { font-size: 12px; }
+
     img { max-width: 100%; }
 
     header {
         background-image: url("../images/fvrightsp.png"), url("../images/fvleftsp.png");
-    }
-
-    .titlebox {
-        width: 90vw;
-    }
-      
-    header h1 {
-        font-size: 40px;
-        height: 70px;
-        line-height: 22px;
-        padding: 10px 5px;
-        margin: auto;
-    }
-      
-    header p {
-        font-size: 14px;
-        width: 210px;
-        margin: auto;
-        line-height: 3px;
-    }
-
-    header span {
-        line-height: 25px;
     }
       
     header img {
@@ -48,18 +27,32 @@
       }
 
     .about h2 {
-        font-size: 25px;
+        font-size: 2.5rem;
         height: 90px;
-        margin: 30px 0;
+        margin: 50px 0 30px;
     }
       
     .about p {
-        font-size: 14px;
+        font-size: 1.4rem;
         line-height: 33px;
     }
+
+    .townpc {
+        display: none;
+    }
+
+    .townsp {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        margin: auto;
+      }
+    
       
     .workingwomon {
-        font-size: 14px;
+        font-size: 1.4rem;
         height: 20vh;
     }
 
@@ -84,7 +77,7 @@
     }
       
     .zukan h2 {
-        font-size: 25px;
+        font-size: 2.5rem;
         height: 25px;
         background-size: cover;
     }
@@ -140,7 +133,7 @@
     
     .salaryspchara h4 {
         font-family: ab-doramin, sans-serif;
-        font-size: 14px;
+        font-size: 1.4rem;
         letter-spacing: 0em;
         line-height: auto;
         text-align: left;
@@ -150,16 +143,16 @@
     }
     
     .salaryspchara h3 {
-        font-size: 20px;
+        font-size: 2rem;
         letter-spacing: 0.6em;
         padding-bottom: 2px;
         border-bottom: solid 10px rgba(68, 102, 121, 0.25);
-        margin: 0 auto 1vw;
-        line-height: 5px;
+        margin: 1.5vw auto;
+        line-height: 2vh;
     }
     
     .salaryspchara p {
-        font-size: 13px;
+        font-size: 1.3rem;
         text-align: left;
         line-height: 21px;
         letter-spacing: 0.2em;
@@ -208,7 +201,7 @@
     
     .nursespchara h4 {
         font-family: ab-doramin, sans-serif;
-        font-size: 14px;
+        font-size: 1.4rem;
         letter-spacing: 0em;
         line-height: auto;
         text-align: left;
@@ -218,16 +211,16 @@
     }
     
     .nursespchara h3 {
-        font-size: 20px;
+        font-size: 2rem;
         letter-spacing: 0.6em;
         padding-bottom: 2px;
         border-bottom: solid 10px rgba(88, 72, 83, 0.25);;
-        margin: 0 auto 1vw;
-        line-height: 5px;
+        margin: 1.5vw auto;
+        line-height: 2vh;
     }
     
     .nursespchara p {
-        font-size: 13px;
+        font-size: 1.3rem;
         text-align: left;
         line-height: 21px;
         letter-spacing: 0.2em;
@@ -276,7 +269,7 @@
     
     .busgirlspchara h4 {
         font-family: ab-doramin, sans-serif;
-        font-size: 14px;
+        font-size: 1.4rem;
         letter-spacing: 0em;
         line-height: auto;
         text-align: left;
@@ -286,16 +279,16 @@
     }
     
     .busgirlspchara h3 {
-        font-size: 18px;
+        font-size: 1.8rem;
         padding-bottom: 2px;
         border-bottom: solid 10px rgba(68, 102, 121, 0.25);
-        margin: 0 auto 1vw;
-        line-height: 5px;
+        margin: 1.5vw auto;
+        line-height: 2vh;
         letter-spacing: 0.2em;
     }
     
     .busgirlspchara p {
-        font-size: 13px;
+        font-size: 1.3rem;
         text-align: left;
         line-height: 21px;
         letter-spacing: 0.2em;
@@ -312,7 +305,7 @@
     .howto h2 {
         width: 90vw;
         height: 80px;
-        font-size: 18px;
+        font-size: 1.8rem;
         margin: 3vh auto;
         padding: 10px 60px;
         line-height: 27px;
@@ -348,7 +341,7 @@
         position: absolute;
         top: 7px;
         left: 15px;
-        font-size: 21.5px;
+        font-size: 1.6rem;
         color: #FBF7E9;
         font-family: ab-doramin, sans-serif;
         letter-spacing: 0em;
@@ -379,7 +372,7 @@
         position: absolute;
         top: 7px;
         left: 15px;
-        font-size: 21.5px;
+        font-size: 1.6rem;
         color: #FBF7E9;
         font-family: ab-doramin, sans-serif;
         letter-spacing: 0em;
@@ -407,9 +400,9 @@
 
       .japanese_images3 h4 {
         position: absolute;
-        top: 7px;
-        left: 15px;
-        font-size: 21.5px;
+        top: 2vw;
+        left: 4vw;
+        font-size: 1.6rem;
         color: #FBF7E9;
         font-family: ab-doramin, sans-serif;
         letter-spacing: 0em;
@@ -439,14 +432,14 @@
       }
     
       .japanese_chara h3 {
-        font-size: 18px;
+        font-size: 1.8rem;
         text-align: center;
         padding: 0 0 10px;
         line-height: 35px;
       }
     
       .japanese_chara p {
-          font-size: 14px;
+          font-size: 1.4rem;
           line-height: 32.5px;
           padding: 10px 0px;
       }
@@ -458,14 +451,18 @@
     }
 
     .gototop p {
-        font-size: 15px;
+        font-size: 1.5rem;
     }
       
     footer h1 {
-        font-size: 36px;
+        font-size: 3.6rem;
     }
 
     .link {
         display: none;
     }
+}
+
+@media screen  and (max-width:360px){
+    html { font-size: 10px; }
 }
