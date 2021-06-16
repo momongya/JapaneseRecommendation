@@ -197,6 +197,10 @@ nav {
     display: flex;
   }
 
+  .salary {
+    position: relative;
+  }
+
   .salaryimg {
     height: 45vw;
     width: 22vw;
@@ -205,15 +209,12 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    display: block;
-    z-index: 100;
-    transition:1s;/*追加*/
-    position: relative;
+    
   }
 
   .salaryimg img {
     height: 40vw;
-    padding: 0 1vw;
+    padding: 0;
     padding-top: 15vw;
   }
 
@@ -221,17 +222,15 @@ nav {
     height: 45vw;
     width: 22vw;
     margin: 0 2vw;
-    padding: 15vw 2vw;
     background-image: url("../images/blueshiori.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    display: flex;
-    transform: rotateY(180deg);/*要素を回転させる*/
-    transition:1s;
-    z-index: 0;
+    opacity: 0;
     position: absolute;
     top: 0;
+    left: 0;
+    padding: 15vw 2vw 0;
   }
 
   .salarychara h4 {
@@ -261,14 +260,14 @@ nav {
     letter-spacing: 0.13em;
   }
 
-  .salary:hover　> .salaryimg {
-    transform: rotateY(180deg);/*要素を裏返す*/
-    z-index: 0;/*背面にするため*/
+  .salarychara:hover {
+    opacity: 0.8;
+    z-index: 999;
+    transition: 1;
   }
 
-  .salary:hover .salarychara {
-    transform: rotateY(0deg);/*裏返した要素を元に戻す*/
-    z-index: 100;/*前面に出すため*/
+  .nurse {
+    position: relative;
   }
 
   .nurseimg {
@@ -286,7 +285,58 @@ nav {
     height: 40vw;
     width: 17vw;
   }
+
+  .nursechara {
+    height: 45vw;
+    width: 22vw;
+    margin: 0 2vw;
+    background-image: url("../images/konshiori.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15vw 2vw 0;
+  }
+
+  .nursechara h4 {
+    font-family: ab-doramin, sans-serif;
+    font-size: 30px;
+    letter-spacing: 0em;
+    line-height: auto;
+    text-align: left;
+    text-decoration:underline;
+    border-width:0.3px;
+  }
+
+  .nursechara h3 {
+    font-size: 40px;
+    letter-spacing: 0.6em;
+    width: 18vw;
+    height: 53px;
+    border-bottom: solid 14px rgba(88, 72, 83, 0.25);
+    margin: 3vh auto;
+    
+  }
+
+  .nursechara p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 36px;
+    letter-spacing: 0.13em;
+  }
+
+  .nursechara:hover {
+    opacity: 0.8;
+    z-index: 999;
+    transition: 1;
+  }
   
+  .busgirl {
+    position: relative;
+  }
 
   .busgirlimg {
     height: 45vw;
@@ -304,11 +354,60 @@ nav {
     width: 16vw;
   }
 
+  .busgirlchara {
+    height: 45vw;
+    width: 22vw;
+    margin: 0 2vw;
+    background-image: url("../images/blueshiori.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15vw 2vw 0;
+  }
+
+  .busgirlchara h4 {
+    font-family: ab-doramin, sans-serif;
+    font-size: 30px;
+    letter-spacing: 0em;
+    line-height: auto;
+    text-align: left;
+    text-decoration:underline;
+    border-width:0.3px;
+  }
+
+  .busgirlchara h3 {
+    font-size: 40px;
+    letter-spacing: 0.2em;
+    line-height: 40px;
+    width: 18vw;
+    height: 53px;
+    border-bottom: solid 14px rgba(68, 102, 121, 0.25);
+    margin: 3vh auto;
+    
+  }
+
+  .busgirlchara p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 36px;
+    letter-spacing: 0.13em;
+  }
+
+  .busgirlchara:hover {
+    opacity: 0.8;
+    z-index: 999;
+    transition: 1;
+  }
+
   .howto h2 {
     font-size: 40px;
     height: 210px;
     padding: 80px 50px;
-    margin: 7vh auto;
+    margin: 20vh auto 7vh;
     background-image: url("../images/scroll.png");
     background-repeat: no-repeat;
     background-position: center;
