@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="styles/sp.css">
     <link rel="stylesheet" href="styles/anime.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="scripts/scrollanime.js"></script>
-    <script src="scripts/script.js"></script>
 
     <!-- アクセントフォント(ABドラミン)の取り込み -->
     <script>
@@ -29,6 +24,10 @@
 </head>
 
 <body>
+
+    <div id="splash">
+        <div id="splash_text"></div>
+        <!--/splash--></div>
     
     <header>
         <div class="wrap load-fade">
@@ -44,7 +43,7 @@
     </header>
 
     <nav>
-        <ul>
+        <ul id="page-link">
             <li><a href="#about">大正時代とは？</a></li>
             <li><a href="#uniform">制服図鑑</a></li>
             <li><a href="#howto">和物取り入れ方</a></li>
@@ -216,7 +215,7 @@
 </section>
 
 <footer>
-    <div class="gototop" id="#top">
+    <div class="gototop" id="top-page">
         <a href="#">
             <img src="images/topbutton.png">
             <p>ページトップへ</p>
@@ -234,6 +233,15 @@
         <p>&copy; Wada Moeka</p>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+<!--IE11用-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script><!--不必要なら削除-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script><!--不必要なら削除-->
+<script src="scripts/scrollanime.js"></script>
+<script src="scripts/script.js"></script>
 
 </body>
 </html>

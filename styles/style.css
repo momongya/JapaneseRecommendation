@@ -207,6 +207,7 @@ nav {
     background-size: 100% 100%;
     display: block;
     z-index: 100;
+    transition:1s;/*追加*/
     position: relative;
   }
 
@@ -227,7 +228,7 @@ nav {
     background-size: 100% 100%;
     display: flex;
     transform: rotateY(180deg);/*要素を回転させる*/
-    transition:5s;
+    transition:1s;
     z-index: 0;
     position: absolute;
     top: 0;
@@ -260,12 +261,12 @@ nav {
     letter-spacing: 0.13em;
   }
 
-  .salaryimg:hover {
+  .salary:hover　> .salaryimg {
     transform: rotateY(180deg);/*要素を裏返す*/
     z-index: 0;/*背面にするため*/
   }
 
-  .salarychara:hover {
+  .salary:hover .salarychara {
     transform: rotateY(0deg);/*裏返した要素を元に戻す*/
     z-index: 100;/*前面に出すため*/
   }
