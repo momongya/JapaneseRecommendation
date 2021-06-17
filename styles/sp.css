@@ -3,6 +3,8 @@
 
     img { max-width: 100%; }
 
+    body { overflow-x: hidden; }
+
     header {
         background-image: url("../images/fvrightsp.png"), url("../images/fvleftsp.png");
     }
@@ -93,7 +95,7 @@
     }
 
     .salarysp {
-        width: 100vh;
+        width: 100vw;
         height: 80vh;
         display: flex;
         padding: 0 5vw;
@@ -161,7 +163,7 @@
     }
     
     .nursesp{
-        width: 100vh;
+        width: 100vw;
         height: 80vh;
         display: flex;
         padding: 0 5vw;
@@ -230,7 +232,7 @@
     }
 
     .busgirlsp{
-        width: 100vh;
+        width: 100vw;
         height: 80vh;
         display: flex;
         padding: 0 5vw;
