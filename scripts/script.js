@@ -44,3 +44,30 @@ var bar = new ProgressBar.Line(splash_text, {//id名を指定
 bar.animate(1.0, function () {//バーを描画する割合を指定します 1.0 なら100%まで描画します
 	$("#splash").delay(500).fadeOut(1200);//アニメーションが終わったら#splashエリアをフェードアウト
 });  
+
+
+// ハンバーガーメニュー用
+(function($) {
+    var $nav   = $('#navArea');
+    var $btn   = $('.toggle_btn');
+    var $mask  = $('#mask');
+    var open   = 'open'; // class
+    // menu open close
+    $btn.on( 'click', function() {
+      if ( ! $nav.hasClass( open ) ) {
+        $nav.addClass( open );
+      } else {
+        $nav.removeClass( open );
+      }
+    });
+    // mask close
+    $mask.on('click', function() {
+      $nav.removeClass( open );
+    });
+
+    //リンクが押されたら自動でclose
+    $("a").on('click', function() {
+        $nav.removeClass( open );
+      });
+  
+  } )(jQuery);

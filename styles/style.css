@@ -84,15 +84,13 @@ header img {
 
 
 /* ナビゲーションの箱 */
-nav {
+  nav {
     background-color: #F8EBC4;
     width: 100vw;
-    height: 85px;
-    
   }
 
   /* リスト全体 */
-  nav ul {
+  nav .innerpc ul {
     text-align: center;
     /* 左右中央揃え */
     display: flex;
@@ -100,7 +98,7 @@ nav {
   }
   
   /* １つ１つのリスト */
-  nav li {
+  nav .innerpc li {
     display: inline-block;
     width: 24vw;
     text-align: center;
@@ -113,13 +111,13 @@ nav {
   }
   
   /* リンク */
-  nav a {
+  nav .innerpc a {
     text-decoration: none;
     font-size: 24px;
   }
   
   /* リンクにふれた時 */
-  nav li:hover {
+  nav .innerpc li:hover {
     background: rgba( 229, 229, 229, 0.4);  /* 背景色指定 */
 
     background-image: url("../images/noshi.png");
@@ -128,7 +126,7 @@ nav {
     background-size: contain;
   }
 
-  nav li:hover a {
+  nav .innerpc li:hover a {
     color: #C67B79;
   }
 
@@ -629,7 +627,16 @@ nav {
 
 /* スマホ版でのみ表示させたいもの用 */
 @media screen  and (min-width:750px){
-  .townsp { display: none; }
+  .navArea {
+    display: none;
+  }
+  nav .inner {
+    display: none;
+  }
+
+  .townsp { 
+    display: none; 
+  }
 
   .japanese_images1 h4 {
     display: none;

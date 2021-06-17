@@ -19,6 +19,144 @@
         display: none;
     }
 
+    /*============
+nav
+=============*/
+nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    width: 220px;
+    background: #FBF5E5;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all .5s;
+    z-index: 4;
+    opacity: 0;
+  }
+  .open nav {
+    left: 0;
+    opacity: 1;
+  }
+  nav .inner {
+    padding: 25px;
+  }
+  nav .inner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav .inner ul li {
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid #584853;
+  }
+  nav .inner ul li a {
+    display: block;
+    color: #584853;
+    font-size: 14px;
+    padding: 1em;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+
+  /* リンクにふれた時 */
+  nav .inner li:hover {
+    background: rgba( 229, 229, 229, 0.4);  /* 背景色指定 */
+
+    background-image: url("../images/noshi.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  nav .inner li:hover a {
+    color: #C67B79;
+  }
+
+  /*============
+  .toggle_btn
+  =============*/
+  .toggle_btn {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 4;
+  }
+  .toggle_btn span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: rgba(68, 102, 121, 0.8);
+    border-radius: 4px;
+    transition: all .5s;
+  }
+  .toggle_btn span:nth-child(1) {
+    top: 4px;
+  }
+  .toggle_btn span:nth-child(2) {
+    top: 14px;
+  }
+  .toggle_btn span:nth-child(3) {
+    bottom: 4px;
+  }
+  .open .toggle_btn span {
+    background-color: #F7F7F5;
+  }
+  .open .toggle_btn span:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(-315deg);
+    transform: translateY(10px) rotate(-315deg);
+  }
+  .open .toggle_btn span:nth-child(2) {
+    opacity: 0;
+  }
+  .open .toggle_btn span:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(315deg);
+    transform: translateY(-10px) rotate(315deg);
+  }
+  /*============
+  #mask
+  =============*/
+  #mask {
+    display: none;
+    transition: all .5s;
+  }
+  .open #mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #584853;
+    opacity: .5;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .round {
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(249, 235, 196, 0.8);
+    border-radius: 50%;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: 0.5px solid;
+    border-color: rgba(68, 102, 121, 0.8);
+  }
+
     /* 大正時代について紹介するセクション */
     .whatistaisho {
         position: absolute;
