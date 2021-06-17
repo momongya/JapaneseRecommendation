@@ -480,7 +480,7 @@ nav {
 
   .japanese_chara h4 {
     font-family: ab-doramin, sans-serif;
-    font-size: 37px;
+    font-size: 35px;
     letter-spacing: 0em;
     line-height: auto;
     text-align: left;
@@ -497,13 +497,31 @@ nav {
   .japanese_chara h3 {
     font-size: 40px;
     text-align: left;
-    padding: 10px 0px;
+    padding: 30px 0px;
   }
 
   .japanese_chara p {
       font-size: 22px;
       line-height: 36px;
       text-align: left;
+  }
+
+  .pinkunder {
+    text-decoration:underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: rgba(215, 182, 183, 0.5);
+  }
+
+  .blueunder {
+    text-decoration:underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: rgba(194, 210, 222, 0.5);
+  }
+
+  .redunder {
+    text-decoration:underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: rgba(189, 144, 139, 0.5);
   }
 
   footer {

@@ -452,6 +452,18 @@
           padding: 10px 0px;
       }
 
+      .pinkunder {
+        text-decoration-thickness: 3px;
+      }
+    
+      .blueunder {
+        text-decoration-thickness: 3px;
+      }
+    
+      .redunder {
+        text-decoration-thickness: 3px;
+      }
+
     footer {
         min-height: 280px;
         max-height: 300px;
