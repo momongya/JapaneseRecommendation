@@ -58,6 +58,7 @@ header {
 .titlebox {
   width: 72vw;
   margin: 0 auto;
+  height: 50px;
 }
 
 header h1 {
@@ -655,11 +656,13 @@ header img {
   }
 }
 
-@media screen and (min-width:1050px) {
+@media screen and (min-width:750px) {
   .br-sp { display: none; }
+  .br-sp2 { display: none; }
 }
 
 @media  screen and (max-width:1050px) {
+  
   html {
     font-size: 17px;
   }
@@ -667,6 +670,12 @@ header img {
   .titlebox {
         width: 90vw;
     }
+
+    br {
+      display: block;
+      content: "";
+      margin: 30px 0;
+  }
 
     header {
       padding-top: 10vh;
