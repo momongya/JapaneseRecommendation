@@ -16,28 +16,22 @@ function load_effect(){
             $(this).addClass('done');
         }
     });
-    $('.load-up').each(function(){
-        var yy = $(this).offset().top;
-        if (tt > yy - hh){
-            $(this).addClass('done');
-        }
-    });
 }
  
 //ふわっとスクロール
 function scroll_effect(){
     var tt = $(window).scrollTop();
     var hh = $(window).height();
-    $('.scroll-fade').each(function(){
-        var yy = $(this).offset().top+200;//効果発生開始タイミングを操作したい場合は数値を変更する
+    $('.scroll-up').each(function(){
+        var yy = $(this).offset().top+hh/50;//効果発生開始タイミングを操作したい場合は数値を変更する
         if (tt > yy - hh){
             $(this).addClass('done');
         }
     });
-    $('.scroll-up').each(function(){
-        var yy = $(this).offset().top+200;//効果発生開始タイミングを操作したい場合は数値を変更する
+    $('.nursespimg').each(function(){
+        var yy = $(this).offset().top+hh/3;//効果発生開始タイミングを操作したい場合は数値を変更する
         if (tt > yy - hh){
-            $(this).addClass('done');
+            $(this).css( { transform: "rotate(7deg)" } );
         }
     });
 }
