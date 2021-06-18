@@ -53,21 +53,30 @@ header {
     background-repeat: no-repeat, no-repeat;
     background-position: top 0% right 0%, bottom 0% left 0%;
     background-size: contain, contain;
+
+}
+
+.head {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .titlebox {
   width: 72vw;
   margin: 0 auto;
-  height: 50px;
 }
 
 header h1 {
     font-size: 110px;
-    height: 135px;
+    height: 125px;
     line-height: 37%;
     letter-spacing: 0.36em;
-    margin: 5vh auto 0;
-    padding: 10px 0px 0px 6vw;
+    margin: 3vh auto 0;
+    padding-left: 6vw;
 }
 
 header p {
@@ -79,7 +88,7 @@ header img {
   max-width: 1150px;
   height: auto;
   margin: 0 auto;
-  margin-top: 18vh;
+ 
 }
 
 
@@ -671,12 +680,6 @@ header img {
         width: 90vw;
     }
 
-    br {
-      display: block;
-      content: "";
-      margin: 30px 0;
-  }
-
     header {
       padding-top: 10vh;
     }
@@ -700,4 +703,12 @@ header img {
         line-height: 25px;
     }
   
+}
+
+@media  screen and (max-width:1050px) and (min-width:751px) {
+  br {
+    display: block;
+    content: "";
+    margin: 30px 0;
+  }
 }

@@ -8,6 +8,10 @@
     header {
         background-image: url("../images/fvrightsp.png"), url("../images/fvleftsp.png");
     }
+
+    .head {
+        height: 80vh;
+    }
       
     header img {
         width: 90vw;
