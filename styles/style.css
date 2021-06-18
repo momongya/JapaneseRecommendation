@@ -711,4 +711,9 @@ header img {
     content: "";
     margin: 30px 0;
   }
+
+  .head {
+    height: 40vh;
+    margin-top: 20vh;
+  }
 }
