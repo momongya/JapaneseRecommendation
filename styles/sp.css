@@ -19,7 +19,11 @@
     }
 
     header h1 {
-        margin: 3vh auto;
+        margin: 3vh auto 0;
+    }
+
+    header p {
+        margin-bottom: 15px;
     }
 
     .br-sp {
