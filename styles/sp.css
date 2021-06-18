@@ -212,6 +212,7 @@ nav {
 
     .workingwomon p {
         line-height: 21px;
+        margin: 15px;
     }
 
     .workingwomon span {
@@ -220,7 +221,7 @@ nav {
       
     .textbox {
         width: 80vw;
-        height: 150px;
+        height: 180px;
         margin: 18vh auto;
     }
       
